@@ -1,0 +1,17 @@
+{% extends 'polls/layout.html' %}
+
+{% block title %}Новый вопрос{% endblock %}
+{% block content %}
+<style>
+.input {
+  margin-top: 50px;
+  border: 1px dotted black;
+}
+</style>
+<div class = "topic" style = "width: 40%;margin-right: 500px; ">Новый вопрос</div>
+<form  method="post">
+    <label for="your_question" style="font-size: 40px; margin-top: 25px">Вопрос:  </label>
+    <br><textarea class="input" id="your_question" type="text" name="your_question" value="{{ current_question }}" rows="5" cols="100" ></textarea></br>
+    <button class="button button2" href="{% url 'polls:index' %}" type="submit" style="margin-top: 10px">Добавить вопрос</button>
+</form>
+{% endblock %}

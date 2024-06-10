@@ -1,0 +1,34 @@
+.center {
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  text-align: center;
+  width: 60%;
+  border: 3px;
+  padding: 10px;
+}
+main {
+    margin-left: 400px;
+}
+
+aside{
+    float: left;
+    width: 400px;
+    background: clear;
+    padding: 2.5%;
+    height: 100vh;
+    border-right: 5px;
+}
+aside img {
+    height: 100px;
+    width: 100px;
+}
+aside div {
+    height: 100px;
+    width: 300px;
+    margin-top: 20px;
+    margin: center;
+}
+body {
+    background: white url("images/background.png") no-repeat;
+}

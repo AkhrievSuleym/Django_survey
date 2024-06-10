@@ -1,0 +1,20 @@
+{% extends 'polls/layout.html' %}
+
+{% block title %}Вопросы{% endblock %}
+{% block content %}
+<div class = "topic" style="margin-right: 350px;">Вопросы от пользователей</div>
+{% if latest_question_list %}
+    <ul list-style-type="none">
+    {% for question in latest_question_list %}
+       <li class="li_style">
+           <ul>
+               <li>Вопрос: {{ question.question_text }}</li>
+               <li><a class="one" href="{% url 'polls:detail' question.id %}">Комментарии к вопросу</a></li>
+               <li>Дата публикации: {{ question.pub_date }}</li>
+           </ul>
+       </li>
+
+        {% endfor %}
+    </ul>
+{% endif %}
+{% endblock %}

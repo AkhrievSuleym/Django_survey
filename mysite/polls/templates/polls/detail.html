@@ -1,0 +1,21 @@
+{% extends 'polls/layout.html' %}
+
+{% block title %}Комментарии{% endblock %}
+{% block content %}
+<div class = "topic" style = "width: 40%;margin-right: 500px; ">Комментарии</div>
+<div class = "question">Вопрос: {{ question.question_text }}</div>
+<div class = "question" style = "border: none;">Комментарии к вопросу: </div>
+{% if question.answer_set.all %}
+    <ul list-style-type="none">
+    {% for answer in question.answer_set.all %}
+       <li class="li_style">
+           <ul>
+               <li>{{ answer }}
+               <li style="font-size: 17px">Дата публикации: {{ question.pub_date }} </li>
+           </ul>
+       </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+<button class="button button1"><a href="{% url 'polls:new_comment' question.id %}">Добавить комментарий</a></button>
+{% endblock %}

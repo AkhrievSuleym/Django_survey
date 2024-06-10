@@ -1,0 +1,17 @@
+{% extends 'polls/layout.html' %}
+
+{% block title %}Новый комментарий{% endblock %}
+
+{% block content %}
+<style>
+.input {
+  margin-top: 50px;
+  border: 1px dotted black;
+}
+</style>
+<form  method="post">
+    <label for="your_question" style="font-size: 40px; margin-top: 25px">Новый комментарий:  </label>
+    <br><textarea class="input" id="your_question" type="text" name="your_question" value="{{ current_question }}" rows="5" cols="100" ></textarea></br>
+    <input type="submit" value="Добавить комментарий" style="margin-top: 10px">
+</form>
+{% endblock %}

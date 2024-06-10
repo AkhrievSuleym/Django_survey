@@ -1,0 +1,112 @@
+.topic {
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  text-align: center;
+  width: 60%;
+  border: 3px solid #008B8B;
+  padding: 10px;
+}
+
+.question {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  text-align: left;
+  margin-top: 10px;
+  width: 50%;
+  border: 3px solid #708090;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.li_style {
+    display: block;
+    background-color: #C0C0C0;
+    width: 500px;
+    text-indent: 0px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 20px;
+    line-height: 1.4;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+a:link {
+    text-decoration: none;
+    color: green;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+a.one{
+   text-decoration: underline;
+}
+a.one:hover{
+   color: black;
+   text-decoration: underline;
+}
+body {
+    background: white url("images/background.png") no-repeat;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
+
+.button2:hover {background-color: #e7e7e7;}
+
+.button3 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555;
+}
+
+.button3:hover {
+  background-color: #555;
+  color: white;
+}
+
+.aside_style {
+    float: right;
+    width: 300px;
+    padding: 2.5%;
+    height: 100vh;
+}
