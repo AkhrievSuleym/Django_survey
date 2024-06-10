@@ -8,7 +8,6 @@ urlpatterns = [
     path("polls/", include("polls.urls")),
     path("users/", include('users.urls')),
     path("admin/", admin.site.urls),
-    path("__debug__/", include("debug_toolbar.urls")),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 if settings.DEBUG:
